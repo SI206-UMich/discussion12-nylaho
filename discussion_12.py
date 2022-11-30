@@ -16,6 +16,10 @@ def setUpDatabase(db_name):
 # TASK 1
 # CREATE TABLE FOR EMPLOYEE INFORMATION IN DATABASE AND ADD INFORMATION
 def create_employee_table(cur, conn):
+    table_name:
+    (column1 datatype,
+    column2 datatype,
+   column3 datatype,)
     pass
 
 # ADD EMPLOYEE'S INFORMTION TO THE TABLE
@@ -66,7 +70,7 @@ class TestDiscussion12(unittest.TestCase):
 
 def main():
     # SETUP DATABASE AND TABLE
-    cur, conn = setUpDatabase('HR.db')
+    cur, conn = setUpDatabase('HR.db')   
     create_employee_table(cur, conn)
 
     add_employee("employee.json",cur, conn)
